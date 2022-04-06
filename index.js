@@ -2,7 +2,7 @@ const config = require("./config.json");
 const Discord = require("discord.js");
 const chalk = require('chalk');
 const gamedig = require("gamedig");
-
+const token = 'process.env.TOKEN';
 const client = new Discord.Client();
 
 client.config = config;
@@ -24,6 +24,8 @@ const updateChannel = async () => {
 	    	channel.setName(`💻 Serveur : ${stats.raw.numplayers} connecté(s)`);
 	    }
 };
+
+client.login(process.env.TOKEN);
 
 client.on('ready', message => {
   if (message.channel.type != 'text' || message.author.bot)
@@ -61,11 +63,9 @@ client.on('ready', message => {
 
 client.on('ready', () => {
 
-	console.log(chalk.green("[BOT] Connected to Discord."));
+	console.log(chalk.green("[ÉlyxiBot] Status du serveur Élyxia connecté !"));
 	
 	updateChannel();
 	setInterval(updateChannel, 60000*0.05);
 	
 });
-
-client.login(process.env.TOKEN);
