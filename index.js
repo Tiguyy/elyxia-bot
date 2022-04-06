@@ -44,7 +44,7 @@ client.on('ready', () => {
 	
 });
 
-client.on("messageCreate", message => {
+client.on("messageCreate", (message) => {
 	if (message.author.bot) return;
 	
 	if (message.content === prefix + "site"){
@@ -61,6 +61,7 @@ client.on("messageCreate", message => {
 	
 	else if (message.content === prefix + "help"){
 		message.reply("__**Besoin d'aide ?**__ \n - Pour avoir l'ip : !ip \n - Pour avoir le site : !site \n - Pour avoir la boutique : !boutique \n \n J'espère t'avoir aidé dans ta majestueuse quête !");
+		console.log("Commande !help demandée");
 	}
 	
 	else if (message.content === "Les bots sont débils"){
