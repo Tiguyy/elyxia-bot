@@ -33,7 +33,7 @@ client.on('ready', message => {
 
   let command = message.content.split(' ')[0].slice(1);
   let args = message.content.replace('.' + command, '').trim();
-  let isBotOwner = message.author.id == 'your_user_id';
+  let isBotOwner = message.author.id == 'Tiguy#5762';
 
   switch (command) {
     case 'restart': {
