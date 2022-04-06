@@ -28,8 +28,6 @@ const updateChannel = async () => {
 client.login(process.env.TOKEN);
 
 client.on('ready', message => {
-  if (message.channel.type != '892799296645234738' || message.author.bot)
-    return;
 
   let command = message.content.split(' ')[0].slice(1);
   let args = message.content.replace('.' + command, '').trim();
