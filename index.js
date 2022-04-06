@@ -29,7 +29,7 @@ client.login(process.env.TOKEN);
 
 client.on('ready', () => {
 
-	console.log(chalk.green("[ÉlyxiBot] Status du serveur Élyxia connecté !"));
+	console.log(chalk.green("[ÉlyxiaBot] Status du serveur Élyxia connecté !"));
 	
 	updateChannel();
 	setInterval(updateChannel, 60000*0.05);
