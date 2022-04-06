@@ -32,7 +32,7 @@ const updateChannel = async () => {
 
 client.login(process.env.TOKEN);
 
-const prefix "!";
+const prefix = "!";
 
 client.on('ready', () => {
 
