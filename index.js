@@ -59,7 +59,7 @@ client.on("message", (Message) => {
 	}
 	
 	else if (Message.content == prefix + "reboot"){
-		Message.channel.send("Tu veux me reboot ? Mais tu es malade ?! Ah non, tu me demandes les horaires des reboot du serveur :sweat_smile: \n Cadeau : \n 3h00 \n 8h00 \n 13h00 \n 19h45 \n Bien sur en heure locale :smirk:")
+		Message.channel.send("Tu veux me reboot ? Mais tu es malade ?! Ah non, tu me demandes les horaires des reboot du serveur :sweat_smile: \nCadeau : \n - 3h00 \n - 8h00 \n - 13h00 \n - 19h45 \nBien sur en heure locale :smirk:")
 	}
 	
 	else if (Message.content == "Les bots sont débiles"){
