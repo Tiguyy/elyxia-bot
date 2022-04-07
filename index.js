@@ -55,13 +55,24 @@ client.on("message", (Message) => {
 		console.log("Commande !help demandée");
 	}
 	
-	else if (Message.content == "une blague"){
+	else if (Message.content == prefix + "blague"){
 		Message.channel.send("Qu'est-ce qui est jaune et qui attend ? \n \n Une erreur LUA non résolue :rofl:");
 	}
 	
 	else if (Message.content == "Les bots sont débiles"){
 		Message.channel.send("Je te boude...");
 	}
+	
+/* Discussion */
+
+	else if (Message.content == "Salut" || "Bonjour" || "Yo"){
+		Message.channel.send("Yo ! comment vas-tu ?");
+	}
+	
+	else if (Message.content == "Ca va et toi ?" || "Ca va et toi" || "Bien et toi ?" || "Bien et toi"){
+		Message.channel.send("Ça va, merci :D");
+	}
+
 });
 
 
