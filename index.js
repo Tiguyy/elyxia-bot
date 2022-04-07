@@ -35,15 +35,6 @@ client.login(process.env.TOKEN);
 
 const prefix = "!";
 
-client.on('ready', () => {
-
-	console.log(chalk.green("[ÉlyxiaBot] Status du serveur Élyxia connecté !"));
-	
-	updateChannel();
-	setInterval(updateChannel, 60000*0.05);
-	
-});
-
 client.on("messageCreate", (message) => {
 	if (message.author.bot) return;
 	
@@ -71,4 +62,13 @@ client.on("messageCreate", (message) => {
 	else if (message.content = "une blague"){
 		message.channel.send("Qu'est-ce qui est jaune et qui attend ? /n /n Une erreur LUA non résolue ! :rofl:");
 	}
+});
+
+client.on('ready', () => {
+
+	console.log(chalk.green("[ÉlyxiaBot] Status du serveur Élyxia connecté !"));
+	
+	updateChannel();
+	setInterval(updateChannel, 60000*0.05);
+	
 });
