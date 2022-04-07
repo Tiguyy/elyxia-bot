@@ -51,16 +51,23 @@ client.on("message", (Message) => {
 	}
 	
 	else if (Message.content === prefix + "help"){
-		Message.reply("__**Besoin d'aide ?**__ \n - Pour avoir l'ip : $ip \n - Pour avoir le site : $site \n - Pour avoir la boutique : $boutique \n \n J'espère t'avoir aidé dans ta majestueuse quête !");
-		console.log("Commande !help demandée");
-	}
+		Message.reply("__**Besoin d'aide ?**__ \n - Pour avoir l'ip : $ip \n - Pour avoir le site : $site \n - Pour avoir la boutique : $boutique \n \n J'espère t'avoir aidé dans ta quête majestueuse !");
+		}
 	
 	else if (Message.content == prefix + "blague"){
 		Message.channel.send("Qu'est-ce qui est jaune et qui attend ? \n \n Une erreur LUA non résolue :rofl:");
 	}
 	
+	else if (Message.content == prefix + "reboot"){
+		Message.channel.send("Tu veux me reboot ? Mais tu es malade ?! Ah non, tu me demandes les horaires des reboot du serveur :sweat_smile: \n Cadeau : \n 3h00 \n 8h00 \n 13h00 \n 19h45 \n Bien sur en heure locale :smirk:")
+	}
+	
 	else if (Message.content == "Les bots sont débiles"){
 		Message.channel.send("Je te boude...");
+	}
+	
+	else if (Message.content == "J'aime les bots"){
+		Message.channel.send("Oh trop mim's ! Tu veux qu'on se marie ? :heart_eyes:");
 	}
 	
 /* Discussion */
