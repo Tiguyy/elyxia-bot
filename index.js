@@ -55,10 +55,15 @@ client.on("message", (Message) => {
 		console.log("Commande !help demandée");
 	}
 	
-	else if (Message.content === "Les bots sont débiles"){
+	else if (Message.content == "une blague"){
+		Message.channel.send("Qu'est-ce qui est jaune et qui attend ? \n \n Une erreur LUA non résolue :rofl:");
+	}
+	
+	else if (Message.content == "Les bots sont débiles"){
 		Message.channel.send("Je te boude...");
 	}
 });
+
 
 client.on('ready', () => {
 
