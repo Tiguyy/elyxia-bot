@@ -51,16 +51,16 @@ client.on("message", (Message) => {
 	}
 	
 	else if (Message.content === prefix + "help"){
-		Message.reply("__**Besoin d'aide ?**__ \n - Pour avoir l'ip : !ip \n - Pour avoir le site : !site \n - Pour avoir la boutique : !boutique \n \n J'espère t'avoir aidé dans ta majestueuse quête !");
+		Message.reply("__**Besoin d'aide ?**__ \n - Pour avoir l'ip : $ip \n - Pour avoir le site : $site \n - Pour avoir la boutique : $boutique \n \n J'espère t'avoir aidé dans ta majestueuse quête !");
 		console.log("Commande !help demandée");
 	}
 	
-	else if (Message.content === "Les bots sont débils"){
+	else if (Message.content === "Les bots sont débiles"){
 		Message.channel.send("Je te boude...");
 	}
 	
 	else if (Message.content = "une blague"){
-		Message.channel.send("Qu'est-ce qui est jaune et qui attend ? /n /n Une erreur LUA non résolue ! :rofl:");
+		Message.channel.send("Qu'est-ce qui est jaune et qui attend ? \n \n Une erreur LUA non résolue ! :rofl:");
 	}
 });
 
