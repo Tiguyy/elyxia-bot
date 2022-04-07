@@ -38,7 +38,7 @@ const prefix = "$";
 client.on("messageCreate", (message) => {
 	if (message.author.bot) return;
 	
-	if (message.content === prefix + "site"){
+	else if (message.content === prefix + "site"){
 		message.reply("Voici les clés du site : https://elyxiarp.fr/");
 	}
 	
