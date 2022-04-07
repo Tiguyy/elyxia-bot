@@ -51,7 +51,7 @@ client.on("message", (Message) => {
 	}
 	
 	else if (Message.content === prefix + "help"){
-		Message.reply("__**Besoin d'aide ?**__ \n - Pour avoir l'ip : $ip \n - Pour avoir le site : $site \n - Pour avoir la boutique : $boutique \n Pour les horaires de reboot : $reboot \n \n J'espère t'avoir aidé dans ta quête majestueuse !");
+		Message.reply("__**Besoin d'aide ?**__ \n - Pour avoir l'ip : $ip \n - Pour avoir le site : $site \n - Pour avoir la boutique : $boutique \n  - Pour les horaires de reboot : $reboot \n \n J'espère t'avoir aidé dans ta quête majestueuse !");
 		}
 	
 	else if (Message.content == prefix + "blague"){
