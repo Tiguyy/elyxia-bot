@@ -65,11 +65,11 @@ client.on("message", (Message) => {
 	
 /* Discussion */
 
-	else if (Message.content == "Salut" || "Bonjour" || "Yo"){
+	else if (Message.content == "Salut"){
 		Message.channel.send("Yo ! comment vas-tu ?");
 	}
 	
-	else if (Message.content == "Ca va et toi ?" || "Ca va et toi" || "Bien et toi ?" || "Bien et toi"){
+	else if (Message.content == "Ca va et toi ?"){
 		Message.channel.send("Ça va, merci :D");
 	}
 
