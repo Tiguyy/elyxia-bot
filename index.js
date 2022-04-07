@@ -56,7 +56,7 @@ client.on("message", (Message) => {
 	}
 	
 	else if (Message.content === "Les bots sont débiles"){
-		Message.channel.send("Je te boude...") return;
+		Message.channel.send("Je te boude...");
 	}
 });
 
