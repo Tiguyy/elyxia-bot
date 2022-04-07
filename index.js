@@ -33,7 +33,7 @@ const updateChannel = async () => {
 
 client.login(process.env.TOKEN);
 
-const prefix = "!";
+const prefix = "$";
 
 client.on("messageCreate", (message) => {
 	if (message.author.bot) return;
