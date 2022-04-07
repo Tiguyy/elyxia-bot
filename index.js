@@ -56,11 +56,7 @@ client.on("message", (Message) => {
 	}
 	
 	else if (Message.content === "Les bots sont débiles"){
-		Message.channel.send("Je te boude...");
-	}
-	
-	else if (Message.content = "une blague"){
-		Message.channel.send("Qu'est-ce qui est jaune et qui attend ? \n \n Une erreur LUA non résolue ! :rofl:");
+		Message.channel.send("Je te boude...") return;
 	}
 });
 
