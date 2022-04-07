@@ -69,7 +69,63 @@ client.on("message", (Message) => {
 		Message.channel.send("Yo ! comment vas-tu ?");
 	}
 	
-	else if (Message.content == "Ca va et toi ?"){
+	else if (Message.content == "Yo"){
+		Message.channel.send("Yo ! comment vas-tu ?");
+	}
+	
+	else if (Message.content == "Bonjour"){
+		Message.channel.send("Yo ! comment vas-tu ?");
+	}
+	
+	else if (Message.content == "salut"){
+		Message.channel.send("Yo ! comment vas-tu ?");
+	}
+	
+	else if (Message.content == "yo"){
+		Message.channel.send("Yo ! comment vas-tu ?");
+	}
+	
+	else if (Message.content == "bonjour"){
+		Message.channel.send("Yo ! comment vas-tu ?");
+	}
+	
+	else if (Message.content == "Ça va et toi"){
+		Message.channel.send("Ça va, merci :D");
+	}
+	
+	else if (Message.content == "Ca va et toi"){
+		Message.channel.send("Ça va, merci :D");
+	}
+	
+	else if (Message.content == "ca va et toi"){
+		Message.channel.send("Ça va, merci :D");
+	}
+	
+	else if (Message.content == "Ça va et toi"){
+		Message.channel.send("Ça va, merci :D");
+	}
+	
+	else if (Message.content == "Ca va et toi"){
+		Message.channel.send("Ça va, merci :D");
+	}
+	
+	else if (Message.content == "ca va et toi"){
+		Message.channel.send("Ça va, merci :D");
+	}
+	
+	else if (Message.content == "Bien et toi ?"){
+		Message.channel.send("Ça va, merci :D");
+	}
+	
+	else if (Message.content == "bien et toi ?"){
+		Message.channel.send("Ça va, merci :D");
+	}
+	
+	else if (Message.content == "Bien et toi"){
+		Message.channel.send("Ça va, merci :D");
+	}
+
+	else if (Message.content == "bien et toi"){
 		Message.channel.send("Ça va, merci :D");
 	}
 
