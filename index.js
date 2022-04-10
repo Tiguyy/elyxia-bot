@@ -66,7 +66,7 @@ client.on("message", (Message) => {
 		Message.channel.send("Oh trop mim's ! Tu veux qu'on se marie ? :heart_eyes:");
 	}
 
-	if(Message.content === prefix + "blague"){
+	else if(Message.content === prefix + "blague"){
         var random = Math.random() * (6 - 1) + 1;
         Math.round(random);
         if(random === 1){
