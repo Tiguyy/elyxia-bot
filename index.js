@@ -67,7 +67,7 @@ client.on("message", (Message) => {
 	}
 
 	else if(Message.content === prefix + "blague"){
-        var random = Math.random() * (6 - 1) + 1;
+        var random = Math.random() * (4 - 1) + 1;
         Math.round(random);
         if(random === 1){
             message.channel.send("Qu'est-ce qui est jaune et qui attend ?\n\n||Une erreur LUA non résolue :rofl:||");
@@ -75,27 +75,17 @@ client.on("message", (Message) => {
         }
         else
         if(random === 2){
-            message.channel.send("C'est l'histoire du petit dej, tu la connaix déjà ?\n\n||Pas de bol ! :rofl:||");
-            
-        }
-        else
-        if(random === 3){
             message.channel.send("Qu'est-ce qu'une chauve souris avec une perruque ?\n\n||Une souris :rofl:||");
             
         }
         else
+        if(random === 3){
+            message.channel.send("Pourquoi les canards sont-ils toujours à l'heure ?\n\n||Car ils sont toujours dans l'étang :rofl:||");
+            
+        }
+        else
         if(random === 4){
-            message.channel.send("Pourquoi les canards sont-ils toujours à l'heure ?\n\n||Car ils sont toujours dans l'étang :rofl:||");
-            
-        }
-        else
-        if(random === 5){
             message.channel.send("Quel est le point commun entre les maths et le sexe ?\n\n||Plus il y en a et plus c'est chaud :rofl:||");
-            
-        }
-        else
-        if(random === 6){
-            message.channel.send("Pourquoi les canards sont-ils toujours à l'heure ?\n\n||Car ils sont toujours dans l'étang :rofl:||");
             
         }
     }
