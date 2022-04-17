@@ -172,6 +172,30 @@ client.on("message", (Message) => {
 		Message.channel.send("Feur");
 	}
 
+	else if (Message.content == "oui ?"){
+		Message.channel.send("Stiti");
+	}
+
+	else if (Message.content == "oui"){
+		Message.channel.send("Stiti");
+	}
+
+	else if (Message.content == "Oui"){
+		Message.channel.send("Stiti");
+	}
+
+	else if (Message.content == "Oui ?"){
+		Message.channel.send("Stiti");
+	}
+
+	else if (Message.content == "Prout"){
+		Message.channel.send("Ça pue ! :face_vomiting:");
+	}
+
+	else if (Message.content == "prout"){
+		Message.channel.send("Ça pue ! :face_vomiting:");
+	}
+
 });
 
 
