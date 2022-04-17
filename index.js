@@ -70,22 +70,22 @@ client.on("message", (Message) => {
         var random = Math.random() * (4 - 1) + 1;
         Math.round(random);
         if(random === 1){
-            message.channel.send("Qu'est-ce qui est jaune et qui attend ?\n\n||Une erreur LUA non résolue :rofl:||");
+            Message.channel.send("Qu'est-ce qui est jaune et qui attend ?\n\n||Une erreur LUA non résolue :rofl:||");
             
         }
         else
         if(random === 2){
-            message.channel.send("Qu'est-ce qu'une chauve souris avec une perruque ?\n\n||Une souris :rofl:||");
+            Message.channel.send("Qu'est-ce qu'une chauve souris avec une perruque ?\n\n||Une souris :rofl:||");
             
         }
         else
         if(random === 3){
-            message.channel.send("Pourquoi les canards sont-ils toujours à l'heure ?\n\n||Car ils sont toujours dans l'étang :rofl:||");
+            Message.channel.send("Pourquoi les canards sont-ils toujours à l'heure ?\n\n||Car ils sont toujours dans l'étang :rofl:||");
             
         }
         else
         if(random === 4){
-            message.channel.send("Quel est le point commun entre les maths et le sexe ?\n\n||Plus il y en a et plus c'est chaud :rofl:||");
+            Message.channel.send("Quel est le point commun entre les maths et le sexe ?\n\n||Plus il y en a et plus c'est chaud :rofl:||");
             
         }
     }
